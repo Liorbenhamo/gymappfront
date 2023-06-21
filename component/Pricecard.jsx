@@ -2,7 +2,7 @@ import React from "react";
 import "./pricecard.css";
 import Box from "@mui/material/Box";
 import Modal from "@mui/material/Modal";
-import Creditcard from "./creditcard";
+import Creditcard from "./Creditcard";
 import { InfoContext } from "../src/App";
 function Pricecard({ name, describtion, price }) {
   const info = React.useContext(InfoContext);

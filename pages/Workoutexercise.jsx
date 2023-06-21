@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Manbody from "../component/Manbody";
 import "./workoutexercise.css";
-import Exercise from "../component/exercise";
+import Exercise from "../component/Exercise";
 
 function Workoutexercise() {
   const [bodypart, setBodypart] = useState();
