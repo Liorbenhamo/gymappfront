@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Manbody from "../component/Manbody";
-import "./Workoutexercise.css";
+import "./workoutexercise.css";
 import Exercise from "../component/exercise";
 
 function Workoutexercise() {
