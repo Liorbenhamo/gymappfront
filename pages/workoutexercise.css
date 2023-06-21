@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.svgexercise {
+  height: 70vh;
+  width: 80vw;
+  margin: 24px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: azure;
+  padding: 15px;
+}
+.body-map__muscle {
+  color: #ebebeb;
+  transition: color 25ms ease-in-out;
+}
+.body-map__muscle:hover {
+  color: red;
+}
+.body-map__container {
+  height: 60vh;
+}
+.containerworkout {
+  margin: 5px;
+  padding: 5px;
+  width: 80vw;
+  display: flex;
+  flex-direction: column;
+}
+.workoutbody {
+  display: flex;
+  justify-content: center;
+  background-color: #242424;
+  min-height: 90vh;
+}
+.textworkout {
+  color: white;
+}

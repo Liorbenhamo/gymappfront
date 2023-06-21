@@ -1,0 +1,83 @@
+.pricedescribe {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  justify-content: center;
+  margin: 25px;
+  padding: 10px;
+  border-style: solid;
+  border-width: 3px;
+  border-radius: 15px;
+}
+.buttoncancel {
+  display: flex;
+  padding: 10px;
+}
+.pricecardbutton {
+  border: none;
+  color: #fff;
+  background-image: linear-gradient(30deg, blueviolet, #4ce3f7);
+  border-radius: 20px;
+  background-size: 100% auto;
+  font-family: inherit;
+  font-size: 17px;
+  padding: 0.3em 0.75em;
+}
+.pricecardbutton:hover {
+  background-position: right center;
+  background-size: 200% auto;
+  -webkit-animation: pulse 2s infinite;
+  animation: pulse512 1.5s infinite;
+}
+.pricedivcard {
+  margin: 10px;
+  font-size: small;
+  background: #07182e;
+  position: relative;
+  display: flex;
+  padding: 5px;
+  place-content: center;
+  place-items: center;
+  overflow: hidden;
+  border-radius: 20px;
+}
+.pricedivcard h1 {
+  z-index: 1;
+  color: white;
+}
+.pricedivcard p {
+  z-index: 1;
+  color: white;
+}
+
+.pricedivcard::before {
+  content: "";
+  position: absolute;
+  width: 100px;
+  background-image: linear-gradient(
+    180deg,
+    rgb(0, 183, 255),
+    rgb(255, 48, 255)
+  );
+  height: 130%;
+  animation: rotBGimg 3s linear infinite;
+  transition: all 0.2s linear;
+}
+@keyframes rotBGimg {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.pricedivcard::after {
+  content: "";
+  position: absolute;
+  background: #07182e;
+  inset: 5px;
+  border-radius: 15px;
+}

@@ -1,0 +1,133 @@
+.formregister {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 350px;
+  background-color: whitesmoke;
+  padding: 20px;
+  border-radius: 20px;
+  position: relative;
+}
+
+.titleregister {
+  font-size: 28px;
+  color: #34495e;
+  font-weight: 600;
+  letter-spacing: -1px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding-left: 30px;
+}
+
+.titleregister::before,
+.titleregister::after {
+  position: absolute;
+  content: "";
+  height: 16px;
+  width: 16px;
+  border-radius: 50%;
+  left: 0px;
+  background-color: #34495e;
+}
+
+.titleregister::before {
+  width: 18px;
+  height: 18px;
+  background-color: #34495e;
+}
+
+.titleregister::after {
+  width: 18px;
+  height: 18px;
+  animation: pulse 1s linear infinite;
+}
+
+.messageregister,
+.signinregister {
+  color: rgba(88, 87, 87, 0.822);
+  font-size: 14px;
+}
+
+.signinregister {
+  text-align: center;
+}
+
+.signinregister a {
+  color: #34495e;
+}
+
+.signinregister a:hover {
+  text-decoration: underline #34495e;
+}
+
+.flexregister {
+  display: flex;
+  width: 100%;
+  gap: 6px;
+}
+
+.formregister label {
+  position: relative;
+}
+
+.formregister label .inputregister {
+  width: 100%;
+  padding: 10px 10px 20px 10px;
+  outline: 0;
+  border: 1px solid rgba(105, 105, 105, 0.397);
+  border-radius: 10px;
+}
+
+.formregister label .inputregister + span {
+  position: absolute;
+  left: 10px;
+  top: 15px;
+  color: grey;
+  font-size: 0.9em;
+  cursor: text;
+  transition: 0.3s ease;
+}
+
+.formregister label .inputregister:placeholder-shown + span {
+  top: 15px;
+  font-size: 0.9em;
+}
+
+.formregister label .inputregister:focus + span,
+.formregister label .inputregister:valid + span {
+  top: 30px;
+  font-size: 0.7em;
+  font-weight: 600;
+}
+
+.formregister label .inputregister:valid + span {
+  color: green;
+}
+
+.submitregister {
+  border: none;
+  outline: none;
+  background-color: #34495e;
+  padding: 10px;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 16px;
+  transform: 0.3s ease;
+}
+
+.submitregister:hover {
+  background-color: #34495e;
+}
+
+@keyframes pulse {
+  from {
+    transform: scale(0.9);
+    opacity: 1;
+  }
+
+  to {
+    transform: scale(1.8);
+    opacity: 0;
+  }
+}

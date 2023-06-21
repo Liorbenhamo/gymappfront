@@ -1,0 +1,15 @@
+.bodycalculator {
+  display: flex;
+  justify-content: center;
+}
+.formregistercalculator {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-height: 300px;
+  width: 100%;
+  background-color: whitesmoke;
+  padding: 20px;
+  border-radius: 20px;
+  position: relative;
+}

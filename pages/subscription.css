@@ -1,0 +1,14 @@
+.bodySubscription {
+  display: flex;
+  justify-content: center;
+  background-color: #242424;
+  min-height: 90vh;
+}
+.containerSubscription {
+  margin: 5px;
+  padding: 5px;
+  width: 80vw;
+  display: flex;
+  flex-direction: column;
+  color: white;
+}
