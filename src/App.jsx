@@ -1,8 +1,8 @@
 import { useState, createContext } from "react";
-import Navbar from "../component/navbar";
+import Navbar from "../component/Navbar";
 import HomePage from "../pages/HomePage";
 import Subscription from "../pages/Subscription";
-import Workoutexercise from "../pages/workoutexercise";
+import Workoutexercise from "../pages/Workoutexercise";
 import "./App.css";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Pilates from "../pages/pilates";
