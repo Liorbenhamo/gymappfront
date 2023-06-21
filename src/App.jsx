@@ -5,7 +5,7 @@ import Subscription from "../pages/Subscription";
 import Workoutexercise from "../pages/Workoutexercise";
 import "./App.css";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Pilates from "../pages/pilates";
+import Pilates from "../pages/Pilates";
 import Bodyfat from "../pages/Bodyfat";
 export const InfoContext = createContext();
 function App() {
