@@ -24,7 +24,7 @@ function Register({ handleClose }) {
     if (emailpassword == verify) {
       console.log("nice");
       try {
-        await axios.post("http://localhost:3000/gymusers", {
+        await axios.post("https://gymback-a65o.onrender.com/gymusers", {
           username: data.username,
           firstname: data.firstname,
           lastname: data.lastname,

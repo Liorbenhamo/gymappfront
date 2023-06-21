@@ -13,7 +13,7 @@ function Creditcard({ price, handleClose }) {
   const onSubmit = async (data) => {
     console.log(data);
     try {
-      await axios.put("http://localhost:3000/putusers", {
+      await axios.put("https://gymback-a65o.onrender.com/putusers", {
         cardcode: data.cardcode,
         cardnum: data.cardnum,
         expiremonth: data.expiremonth,

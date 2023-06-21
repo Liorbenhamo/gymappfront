@@ -77,7 +77,7 @@ function Calendar() {
           slected = day;
           if (!day.users.includes(info.correntuser.username)) {
             try {
-              await axios.put("http://localhost:3000/putdays", {
+              await axios.put("https://gymback-a65o.onrender.com/putdays", {
                 date: date,
                 day: datepicked.day,
                 month: datepicked.month,
@@ -95,7 +95,7 @@ function Calendar() {
       }
       if (!slected) {
         try {
-          await axios.post("http://localhost:3000/pilates", {
+          await axios.post("https://gymback-a65o.onrender.com/pilates", {
             date: date,
             day: datepicked.day,
             month: datepicked.month,
@@ -119,7 +119,7 @@ function Calendar() {
   useEffect(() => {
     const test = async () => {
       try {
-        const res = await fetch("http://localhost:3000/days");
+        const res = await fetch("https://gymback-a65o.onrender.com/days");
         const data = await res.json();
         setDaydata(data);
         console.log(data);

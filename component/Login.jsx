@@ -23,7 +23,7 @@ function Login({ handleClose2 }) {
   useEffect(() => {
     const test = async () => {
       try {
-        const res = await fetch("http://localhost:3000/users");
+        const res = await fetch("https://gymback-a65o.onrender.com/users");
         const data = await res.json();
         setUsers(data);
         console.log(data);
